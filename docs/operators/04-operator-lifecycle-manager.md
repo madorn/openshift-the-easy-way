@@ -27,16 +27,23 @@ Operators are packaged into a set of manifests.
 To view the package manifests, do the following:
 
 ```sh
-oc get packagemanifests
-NAME                   AGE
-amq-streams            43m
-etcd                   43m
-federationv2           43m
-prometheus             43m
-svcat                  43m
-couchbase-enterprise   43m
-dynatrace-monitoring   43m
-mongodb-enterprise     43m
+oc -n openshift-marketplace get packagemanifests
+NAME                    AGE
+automationbroker        1d
+cluster-logging         1d
+descheduler             1d
+etcd                    1d
+federationv2            1d
+jaeger                  1d
+metering                1d
+prometheus              1d
+svcat                   1d
+templateservicebroker   1d
+amq-streams             1d
+packageserver           1d
+couchbase-enterprise    1d
+dynatrace-monitoring    1d
+mongodb-enterprise      1d
 ```
 
 ## Subscriptions
